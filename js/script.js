@@ -24,27 +24,27 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
 // Faculty data
 const facultyData = [
     {
-        name: "Prof. Adebayo O. Salami",
+        name: "-----------------------",
         title: "Professor & Head of Department",
         expertise: "Robotics, Control Systems",
         image: "https://via.placeholder.com/300x250/4B0082/ffffff?text=Prof.+Adebayo"
     },
     {
-        name: "Dr. Fatima Bello",
+        name: "--------------------",
         title: "Senior Lecturer",
         expertise: "Embedded Systems, IoT",
         image: "https://via.placeholder.com/300x250/4B0082/ffffff?text=Dr.+Fatima"
     },
     {
-        name: "Dr. Chukwudi Eze",
+        name: "-------------------",
         title: "Lecturer I",
         expertise: "Mechatronic Design, Automation",
         image: "https://via.placeholder.com/300x250/4B0082/ffffff?text=Dr.+Chukwudi"
     },
     {
-        name: "Engr. Michael Okafor",
+        name: "----------------------------",
         title: "Lecturer II",
-        expertise: "Artificial Intelligence, Machine Learning",
+        expertise: "Sensors & Actuators",
         image: "https://via.placeholder.com/300x250/4B0082/ffffff?text=Engr.+Michael"
     }
 ];
@@ -66,9 +66,9 @@ const researchProjectsData = [
 
 // Student projects data
 const studentProjectsData = [
-    { title: "Gesture-Controlled Robotic Arm", students: "Aliyu Musa, Fatima Usman", supervisor: "Dr. Bello", abstract: "A robotic arm that mimics hand gestures using flex sensors and Arduino.", image: "https://images.unsplash.com/photo-1581092335871-4c4ff7f5b2e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { title: "Smart Solar Tracking System", students: "Samuel Ade, Peter Okonkwo", supervisor: "Dr. Eze", abstract: "Dual-axis solar tracker with maximum power point tracking.", image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { title: "Automated Parking System", students: "Blessing Eze, Chinedu Nnamdi", supervisor: "Prof. Salami", abstract: "IoT-based parking management with slot detection and mobile app.", image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" }
+    { title: "Gesture-Controlled Robotic Arm", students: "--------------------", supervisor: "-------", abstract: "A robotic arm that mimics hand gestures using flex sensors and Arduino.", image: "https://images.unsplash.com/photo-1581092335871-4c4ff7f5b2e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { title: "Smart Solar Tracking System", students: "---------------------", supervisor: "-------", abstract: "Dual-axis solar tracker with maximum power point tracking.", image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { title: "Automated Parking System", students: "----------------------", supervisor: "--------", abstract: "IoT-based parking management with slot detection and mobile app.", image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" }
 ];
 
 // ======================

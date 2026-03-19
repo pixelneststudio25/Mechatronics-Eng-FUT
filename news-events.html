@@ -4,63 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News & Events - Mechatronics Engineering, FUT Minna</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">...</nav>
-
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>News & Events</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="Mechatronics gear logo.png" alt="Mechatronics Logo">
+                <span>Mechatronics Eng.</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <!--<li><a href="research.html">Research</a></li>-->
+                <li><a href="news-events.html">News & Events</a></li>
+                <li><a href="student-resources.html">Student Resources</a></li>
+                <!--<li><a href="projects.html">Projects</a></li>-->
+                <!--<li><a href="alumni.html">Alumni</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section class="calendar-section">
-            <div class="container">
-                <h2>Event Calendar</h2>
-                <div id="calendar-container">
-                    <!-- Dynamic calendar goes here -->
-                </div>
-                <div class="calendar-nav">
-                    <button id="prev-month"><i class="fas fa-chevron-left"></i> Prev</button>
-                    <span id="current-month-year">Month Year</span>
-                    <button id="next-month">Next <i class="fas fa-chevron-right"></i></button>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">News & Events</h1>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section class="calendar-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Event Calendar</h2>
+            <div id="calendar-container" data-aos="fade-up" data-aos-delay="100">
+                <!-- Dynamic calendar goes here -->
+            </div>
+            <div class="calendar-nav" data-aos="fade-up" data-aos-delay="200">
+                <button id="prev-month"><i class="fas fa-chevron-left"></i> Prev</button>
+                <span id="current-month-year">Month Year</span>
+                <button id="next-month">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events List -->
+    <section class="events-list">
+        <div class="container">
+            <h2 data-aos="fade-up">All Upcoming Events</h2>
+            <div id="full-event-list" data-aos="fade-up" data-aos-delay="100">
+                <!-- Upcoming events list from JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="news-list">
+        <div class="container">
+            <h2 data-aos="fade-up">Latest News</h2>
+            <div class="news-items" data-aos="fade-up" data-aos-delay="100">
+                <article class="card" style="text-align: left; padding: 20px;">
+                    <h3>Mechatronics Student Wins National Robotics Competition</h3>
+                    <p>John Doe, a 400-level student, emerged winner of the 2025 Nigeria Robotics Challenge.</p>
+                    <span class="event-date">March 15, 2025</span>
+                </article>
+                <article class="card" style="text-align: left; padding: 20px;">
+                    <h3>Department Hosts International Conference on Automation</h3>
+                    <p>The 3rd International Conference on Intelligent Systems and Automation will hold from June 10-12.</p>
+                    <span class="event-date">February 28, 2025</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3>Mechatronics Engineering</h3>
+                <p>Federal University of Technology, Minna<br>Niger State, Nigeria</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Mechatronics Engineering, FUT Minna. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Back to Top -->
+    <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
 
-        <section class="events-list">
-            <div class="container">
-                <h2>All Upcoming Events</h2>
-                <div id="full-event-list">
-                    <!-- Upcoming events list from JS -->
-                </div>
-            </div>
-        </section>
-
-        <section class="news-list">
-            <div class="container">
-                <h2>Latest News</h2>
-                <div class="news-items">
-                    <!-- Hardcoded news can go here, or dynamic -->
-                    <article class="news-item">
-                        <h3>Mechatronics Student Wins National Robotics Competition</h3>
-                        <p>John Doe, a 400-level student, emerged winner of the 2025 Nigeria Robotics Challenge.</p>
-                        <span class="date">March 15, 2025</span>
-                    </article>
-                    <article class="news-item">
-                        <h3>Department Hosts International Conference on Automation</h3>
-                        <p>The 3rd International Conference on Intelligent Systems and Automation will hold from June 10-12.</p>
-                        <span class="date">February 28, 2025</span>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>...</footer>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
 </html>

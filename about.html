@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Mechatronics Engineering, FUT Minna</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="https://via.placeholder.com/50x50/6a0dad/ffffff?text=M" alt="Mechatronics Logo">
+                <img src="Mechatronics gear logo.png" alt="Mechatronics Logo">
                 <span>Mechatronics Eng.</span>
             </a>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="academics.html">Academics</a></li>
                 <li><a href="faculty.html">Faculty</a></li>
-                <li><a href="research.html">Research</a></li>
+                <!--<li><a href="research.html">Research</a></li>-->
                 <li><a href="news-events.html">News & Events</a></li>
                 <li><a href="student-resources.html">Student Resources</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="alumni.html">Alumni</a></li>
+                <!--<li><a href="projects.html">Projects</a></li>-->
+                <!--<li><a href="alumni.html">Alumni</a></li>-->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -34,44 +39,46 @@
         </div>
     </nav>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>About Us</h1>
-            </div>
-        </section>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">About Us</h1>
+        </div>
+    </section>
 
-        <section class="about-content">
-            <div class="container">
-                <div class="about-grid">
-                    <div>
-                        <h2>Welcome to Mechatronics Engineering</h2>
-                        <p>The Department of Mechatronics Engineering at Federal University of Technology, Minna, is a centre of excellence in the interdisciplinary field of mechanical, electronics, computer, and control engineering. Our mission is to produce graduates with the skills to design and create intelligent systems and products that are smart and efficient.</p>
-                        <p>Established in [year], we have grown to become one of the most sought-after engineering departments in Nigeria, with state-of-the-art laboratories and a dedicated faculty.</p>
-                        <h3>Our Vision</h3>
-                        <p>To be a leading department in mechatronics education and research in Africa, fostering innovation and entrepreneurship.</p>
-                        <h3>Our Mission</h3>
-                        <p>To provide a conducive learning environment, engage in cutting-edge research, and produce graduates who can solve real-world problems through mechatronics.</p>
-                    </div>
-                    <div>
-                        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Engineering Lab" style="width:100%; border-radius:8px;">
-                    </div>
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div data-aos="fade-right">
+                    <h2>Welcome to Mechatronics Engineering</h2>
+                    <p>The Department of Mechatronics Engineering at Federal University of Technology, Minna, is a centre of excellence in the interdisciplinary field of mechanical, electronics, computer, and control engineering. Our mission is to produce graduates with the skills to design and create intelligent systems and products that are smart and efficient.</p>
+                    <p>Established in 2010, we have grown to become one of the most sought-after engineering departments in Nigeria, with state-of-the-art laboratories and a dedicated faculty.</p>
+                    <h3>Our Vision</h3>
+                    <p>To be a leading department in mechatronics education and research in Africa, fostering innovation and entrepreneurship.</p>
+                    <h3>Our Mission</h3>
+                    <p>To provide a conducive learning environment, engage in cutting-edge research, and produce graduates who can solve real-world problems through mechatronics.</p>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Engineering Lab" style="width:100%; border-radius:15px; box-shadow: var(--shadow);">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="accreditation">
-            <div class="container">
-                <h2>Accreditations & Recognition</h2>
-                <p>The department is fully accredited by the National Universities Commission (NUC) and the Council for the Regulation of Engineering in Nigeria (COREN). Our curriculum meets international standards.</p>
-                <div class="accred-badges">
-                    <span>NUC Accredited</span>
-                    <span>COREN Accredited</span>
-                </div>
+    <!-- Accreditation Section -->
+    <section class="accreditation">
+        <div class="container">
+            <h2 data-aos="fade-up">Accreditations & Recognition</h2>
+            <p data-aos="fade-up" data-aos-delay="100">The department is fully accredited by the National Universities Commission (NUC) and the Council for the Regulation of Engineering in Nigeria (COREN). Our curriculum meets international standards.</p>
+            <div class="accred-badges" data-aos="fade-up" data-aos-delay="200">
+                <span>NUC Accredited</span>
+                <span>COREN Accredited</span>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container footer-grid">
             <div>
@@ -102,6 +109,12 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
 </html>

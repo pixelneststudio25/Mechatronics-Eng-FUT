@@ -866,3 +866,129 @@ footer a:hover {
     padding: 12px 20px;      /* Slightly larger touch area */
     font-size: 1.1rem;       /* Optional: slightly larger text */
 }
+
+/* Course Levels Section */
+.course-levels {
+    background: var(--light-gray);
+    padding: 60px 0;
+}
+
+.course-levels h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+}
+
+.level-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.level-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.level-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.level-icon {
+    color: var(--primary);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.level-card h3 {
+    color: var(--primary);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.level-desc {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.course-list {
+    margin: 20px 0;
+    flex-grow: 1;
+}
+
+.course-list h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--primary-dark);
+    border-left: 4px solid var(--primary);
+    padding-left: 12px;
+}
+
+.course-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.course-list li {
+    padding: 5px 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.course-list li:before {
+    content: "\f0a9";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-size: 0.8rem;
+}
+
+.download-btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    transition: background 0.3s;
+    margin-top: auto;
+}
+
+.download-btn:hover {
+    background: var(--primary-dark);
+    color: white;
+}
+
+.download-btn i {
+    margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .level-card h3 {
+        font-size: 1.4rem;
+    }
+    .course-list li {
+        font-size: 0.85rem;
+    }
+}

@@ -27,26 +27,20 @@ const facultyData = [
         name: "-----------------------",
         title: "Professor & Head of Department",
         expertise: "Robotics, Control Systems",
-        image: "https://via.placeholder.com/300x250/4B0082/ffffff?text=Prof.+Adebayo"
+        image: "images/WhatsApp Image 2026-03-27 at 16.04.36.jpeg"
     },
     {
         name: "--------------------",
-        title: "Senior Lecturer",
+        title: "Staff Adviser, 400 level Adviser",
         expertise: "Embedded Systems, IoT",
-        image: "https://via.placeholder.com/300x250/4B0082/ffffff?text=Dr.+Fatima"
+        image: "images/WhatsApp Image 2026-03-27 at 16.09.16.jpeg"
     },
     {
         name: "-------------------",
-        title: "Lecturer I",
+        title: "Exam Officer, 100 level Adviser",
         expertise: "Mechatronic Design, Automation",
-        image: "https://via.placeholder.com/300x250/4B0082/ffffff?text=Dr.+Chukwudi"
+        image: "images/WhatsApp Image 2026-03-27 at 16.09.14.jpeg"
     },
-    {
-        name: "----------------------------",
-        title: "Lecturer II",
-        expertise: "Sensors & Actuators",
-        image: "https://via.placeholder.com/300x250/4B0082/ffffff?text=Engr.+Michael"
-    }
 ];
 
 // Events data

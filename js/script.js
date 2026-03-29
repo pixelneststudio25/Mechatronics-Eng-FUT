@@ -60,9 +60,9 @@ const researchProjectsData = [
 
 // Student projects data
 const studentProjectsData = [
-    { title: "Gesture-Controlled Robotic Arm", students: "--------------------", supervisor: "-------", abstract: "A robotic arm that mimics hand gestures using flex sensors and Arduino.", image: "https://images.unsplash.com/photo-1581092335871-4c4ff7f5b2e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { title: "Smart Solar Tracking System", students: "---------------------", supervisor: "-------", abstract: "Dual-axis solar tracker with maximum power point tracking.", image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { title: "Automated Parking System", students: "----------------------", supervisor: "--------", abstract: "IoT-based parking management with slot detection and mobile app.", image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" }
+    { title: "Gesture-Controlled Robotic Arm", students: " ", supervisor: " ", abstract: "A robotic arm that mimics hand gestures using flex sensors and Arduino.", image: "https://images.unsplash.com/photo-1581092335871-4c4ff7f5b2e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { title: "Smart Solar Tracking System", students: " ", supervisor: " ", abstract: "Dual-axis solar tracker with maximum power point tracking.", image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { title: "Automated Parking System", students: " ", supervisor: " ", abstract: "IoT-based parking management with slot detection and mobile app.", image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" }
 ];
 
 // ======================

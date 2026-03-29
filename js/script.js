@@ -24,19 +24,19 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
 // Faculty data
 const facultyData = [
     {
-        name: "-----------------------",
+        name: "Engr Dr. Taliha Folorunsho (PhD)",
         title: "Professor & Head of Department",
         expertise: "Robotics, Control Systems",
         image: "images/WhatsApp Image 2026-03-27 at 16.04.36.jpeg"
     },
     {
-        name: "--------------------",
+        name: "Engr Justice Anunuso (R.Engr)",
         title: "Staff Adviser, 400 level Adviser",
         expertise: "Embedded Systems, IoT",
         image: "images/WhatsApp Image 2026-03-27 at 16.09.16.jpeg"
     },
     {
-        name: "-------------------",
+        name: "Engr Dr. Bala Jibrin ( MNSE)",
         title: "Exam Officer, 100 level Adviser",
         expertise: "Mechatronic Design, Automation",
         image: "images/WhatsApp Image 2026-03-27 at 16.09.14.jpeg"

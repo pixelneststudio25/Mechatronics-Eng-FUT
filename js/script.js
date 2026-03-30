@@ -30,16 +30,16 @@ const facultyData = [
         image: "images/WhatsApp Image 2026-03-27 at 16.04.36.jpeg"
     },
     {
+        name: "Engr Dr. Bala Jibrin ( MNSE)",
+        title: "Exam Officer, 100 level Adviser",
+        expertise: "Mechatronic Design, Automation",
+        image: "images/WhatsApp Image 2026-03-30 at 16.50.53.jpeg"
+    },
+    {
         name: "Engr Justice Anunuso (R.Engr)",
         title: "Staff Adviser, 400 level Adviser",
         expertise: "Embedded Systems, IoT",
         image: "images/WhatsApp Image 2026-03-27 at 16.09.16.jpeg"
-    },
-    {
-        name: "Engr Dr. Bala Jibrin ( MNSE)",
-        title: "Exam Officer, 100 level Adviser",
-        expertise: "Mechatronic Design, Automation",
-        image: "images/WhatsApp Image 2026-03-27 at 16.09.14.jpeg"
     },
 ];
 
@@ -51,6 +51,8 @@ const eventsData = [
     { title: "PhD Defense: John Doe", date: "2025-04-25", description: "Thesis: 'Adaptive Control for Quadruped Robots'." },
     { title: "Alumni Meetup", date: "2025-05-10", description: "Networking event with alumni in industry." }
 ];
+
+
 
 // Research projects data
 const researchProjectsData = [

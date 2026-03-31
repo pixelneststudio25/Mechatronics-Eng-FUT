@@ -992,3 +992,15 @@ footer a:hover {
         font-size: 0.85rem;
     }
 }
+
+/* Funder badge styling */
+.funder-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--secondary), #e6a906);
+    color: var(--primary);
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 10px 0;
+}

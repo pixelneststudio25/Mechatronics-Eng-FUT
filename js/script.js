@@ -212,7 +212,7 @@ if (document.getElementById('featured-projects-grid')) {
 // ======================
 function animateStats() {
     const stats = [
-        { element: document.getElementById('statStudents'), target: 350 },
+        { element: document.getElementById('statStudents'), target: 500 },
         { element: document.getElementById('statFaculty'), target: 25 },
         { element: document.getElementById('statProjects'), target: 45 },
         { element: document.getElementById('statPublications'), target: 120 }

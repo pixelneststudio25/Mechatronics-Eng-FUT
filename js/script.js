@@ -72,7 +72,7 @@ const studentProjectsData = [
         title: "Accident Detection System with Vehicle-to-Infrastructure Communication",
         students: "Yusuf Abdullahi Olamilekan",
         supervisor: "Dr. T. A. Folorunso & Dr. J. A. Bala",
-        funder: null
+        funder: null,
         abstract: "An integrated system for accident prevention through road anomaly detection, hazard communication, and real-time driver alerts. The system uses IR, vibration, flame, and GPS sensors, with a CYD display unit connected via Wi-Fi for real-time hazard communication.",
         image: "images/WhatsApp Image 2026-03-30 at 16.50.55 (1).jpeg"  // Replace with actual image
     },
@@ -80,7 +80,7 @@ const studentProjectsData = [
         title: "Autonomous Hospital Waste Disposal System",
         students: "Team Project",
         supervisor: "Dr. J. A. Bala",
-        funder: null
+        funder: null,
         abstract: "A waste disposal robot and smart bins system where the robot autonomously empties bins by prioritizing air pollution levels and waste quantity, ensuring efficient and hygienic hospital waste management.",
         image: "images/WhatsApp Image 2026-03-30 at 16.50.59 (1).jpeg"  // Replace with actual image
     },
@@ -88,7 +88,7 @@ const studentProjectsData = [
         title: "Solar-Powered Flexible Water Pump Control System",
         students: "Team Project",
         supervisor: "Dr. T. A. Folorunso",
-        funder: null
+        funder: null,
         abstract: "A solar panel‑enabled flexible control mechanism for submersible water pumps in domestic applications. The system combines automation and renewable solar energy to ensure consistent water availability, lower operating costs, and improve sustainability in areas with unstable electricity.",
         image: "images/WhatsApp Image 2026-03-30 at 16.51.01.jpeg"  // Replace with actual image
     },

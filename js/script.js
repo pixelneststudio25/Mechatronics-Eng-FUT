@@ -60,11 +60,80 @@ const researchProjectsData = [
     { title: "Smart Grid IoT Sensors", researchers: "Prof. Salami, Engr. Okafor", description: "Low-cost sensors for power distribution monitoring." }
 ];
 
-// Student projects data
+// Student projects data (updated with real projects)
 const studentProjectsData = [
-    { title: "Gesture-Controlled Robotic Arm", students: " ", supervisor: " ", abstract: "A robotic arm that mimics hand gestures using flex sensors and Arduino.", image: "https://images.unsplash.com/photo-1581092335871-4c4ff7f5b2e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { title: "Smart Solar Tracking System", students: " ", supervisor: " ", abstract: "Dual-axis solar tracker with maximum power point tracking.", image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { title: "Automated Parking System", students: " ", supervisor: " ", abstract: "IoT-based parking management with slot detection and mobile app.", image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" }
+    {
+        title: "Accident Detection System with Vehicle-to-Infrastructure Communication",
+        students: "Yusuf Abdullahi Olamilekan",
+        supervisor: "Dr. T. A. Folorunso & Dr. J. A. Bala",
+        funder: null
+        abstract: "An integrated system for accident prevention through road anomaly detection, hazard communication, and real-time driver alerts. The system uses IR, vibration, flame, and GPS sensors, with a CYD display unit connected via Wi-Fi for real-time hazard communication.",
+        image: "images/WhatsApp Image 2026-03-30 at 16.50.55 (1).jpeg"  // Replace with actual image
+    },
+    {
+        title: "Autonomous Hospital Waste Disposal System",
+        students: "Team Project",
+        supervisor: "Dr. J. A. Bala",
+        funder: null
+        abstract: "A waste disposal robot and smart bins system where the robot autonomously empties bins by prioritizing air pollution levels and waste quantity, ensuring efficient and hygienic hospital waste management.",
+        image: "images/WhatsApp Image 2026-03-30 at 16.50.59 (1).jpeg"  // Replace with actual image
+    },
+    {
+        title: "Solar-Powered Flexible Water Pump Control System",
+        students: "Team Project",
+        supervisor: "Dr. T. A. Folorunso",
+        funder: null
+        abstract: "A solar panel‑enabled flexible control mechanism for submersible water pumps in domestic applications. The system combines automation and renewable solar energy to ensure consistent water availability, lower operating costs, and improve sustainability in areas with unstable electricity.",
+        image: "images/WhatsApp Image 2026-03-30 at 16.51.01.jpeg"  // Replace with actual image
+    },
+    {
+        title: "STEM e‑Literacy Platform for Secondary Education",
+        students: "Research Team",
+        supervisor: "Principal Investigator",
+        funder: "Kaduna State Government",
+        abstract: "Development of a digital platform to enhance STEM literacy among secondary school students in Kaduna State, providing interactive e‑learning resources and teacher support.",
+        image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        title: "AI‑Based Autonomous Robotic System for Weed Control in Maize Farmland",
+        students: "Research Team",
+        supervisor: "Principal Investigator",
+        funder: "TETFund",
+        abstract: "An autonomous robot using artificial intelligence to identify and remove weeds in maize fields, reducing herbicide use and increasing crop yield.",
+        image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        title: "Novel Road Accident Monitoring and Prevention System",
+        students: "Research Team",
+        supervisor: "Principal Investigator",
+        funder: "TETFund",
+        abstract: "Advanced monitoring system for Nigerian roads and highways to detect accident-prone conditions and alert drivers in real time, aiming to reduce fatalities.",
+        image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        title: "Artificial Intelligence for Clean Energy",
+        students: "Research Team",
+        supervisor: "Principal Investigator",
+        funder: "Royal Academy of Engineering",
+        abstract: "Leveraging AI to optimize clean energy generation, storage, and distribution, with a focus on improving efficiency and integrating renewable sources.",
+        image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        title: "Novel Pipeline Monitoring under High Temperature and Pressure Conditions",
+        students: "Research Team",
+        supervisor: "Principal Investigator",
+        funder: "TETFund",
+        abstract: "Development of sensors and monitoring systems for pipelines operating under extreme conditions, ensuring safety and early leak detection.",
+        image: "https://images.unsplash.com/photo-1581092335871-4c4ff7f5b2e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        title: "Intelligent Wireless Mobile Phone Charger",
+        students: "Research Team",
+        supervisor: "Principal Investigator",
+        funder: "NCC (Nigerian Communications Commission)",
+        abstract: "Fabrication of an intelligent wireless charger that optimizes charging efficiency, detects device compatibility, and includes safety features.",
+        image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    }
 ];
 
 // ======================
@@ -321,8 +390,9 @@ if (document.getElementById('project-showcase-container')) {
             <img src="${proj.image}" alt="${proj.title}">
             <div class="project-info">
                 <h3>${proj.title}</h3>
-                <p class="students">Students: ${proj.students}</p>
-                <p class="supervisor">Supervisor: ${proj.supervisor}</p>
+                ${proj.funder ? `<span class="funder-badge"><i class="fas fa-trophy"></i> Funded by: ${proj.funder}</span>` : ''}
+                <p class="students"><i class="fas fa-user-graduate"></i> <strong>Students/Researchers:</strong> ${proj.students}</p>
+                <p class="supervisor"><i class="fas fa-chalkboard-teacher"></i> <strong>Supervisor/PI:</strong> ${proj.supervisor}</p>
                 <p>${proj.abstract}</p>
             </div>
         `;
